@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/58/14/e3/5814e3f1f8b6eee963e754003a1cfa6c.jpg'); /* ใช้รูปภาพจาก URL */
+            background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+            background-position: center; /* จัดตำแหน่งรูปภาพให้ตรงกลาง */
+            background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
+            margin: 0; /* ลบ margin เริ่มต้นของ body */
+            height: 100vh; /* ทำให้พื้นที่พื้นหลังเต็มความสูงของ viewport */
+            display: flex; /* ใช้ flexbox */
+            flex-direction: column; /* แนวตั้ง */
+        }
+
+        header {
+            margin-bottom: 20px; /* ระยะห่างระหว่าง header กับ main */
+            text-align: center; /* จัดข้อความให้กึ่งกลาง */
+            color: rgb(0, 0, 0); /* สีข้อความ */
+            padding: 20px 0;
+        }
+
+        main {
+            display: flex; /* ใช้ flexbox สำหรับ main */
+            justify-content: center; /* จัดแนวกลางในแนวนอน */
+            align-items: center; /* จัดแนวกลางในแนวตั้ง */
+            flex-grow: 1; /* ให้ main ใช้พื้นที่ที่เหลือ */
+            text-align: center; /* จัดข้อความให้กึ่งกลาง */
+            color: rgb(0, 0, 0); /* สีข้อความ */
+        }
+
+        .image-container {
+            border: 0px solid #c0e4f6; /* กรอบรอบรูปภาพ */
+            padding: 20px; /* ระยะห่างภายในกรอบ */
+            border-radius: 20px; /* มุมกรอบมน */
+            background-color: #c0e4f6; /* สีพื้นหลังกรอบ */
+        }
+
+        .content {
+            margin-left: 100px; /* ระยะห่างระหว่างรูปกับข้อความ */
+            border: 0px solid rgb(0, 0, 0); /* กรอบรอบข้อความ */
+            padding: 20px; /* ระยะห่างภายในกรอบ */
+            border-radius: 20px; /* มุมกรอบมน */
+            background-color: #c0e4f6; /* สีพื้นหลังกรอบ */
+            font-size: 1.2rem;
+        }
+
+        img {
+            width: 300px; /* กำหนดความกว้าง */
+            height: 400px; /* กำหนดความสูง */
+            object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ */
+            border-radius: 20px;
+        }
+    </style>
+    <title>RESUME</title>
+</head>
+<body>
+    <header>
+        <h1>RESUME</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">เกี่ยวกับฉัน</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="contact.html">ข้อมูลติดต่อ</a></li>
+                <li><a href="API.html">API</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="image-container">
+            <img src="1.jpg" alt="รูปภาพของนิธินันท์">
+        </div>
+        <div class="content">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>
+                ชื่อ : นางสาว นิธินันท์ ไชยนันทน์<br><br>
+                ชื่อเล่น : นิน<br><br>
+                อายุ : 23 ปี<br><br>
+                วันเกิด : 13 มกราคม 2544<br><br>
+                เชื้อชาติ : ไทย<br><br>
+                ศาสนา : พุทธ<br><br>
+                งานอดิเรก : ทำขนม เลี้ยงแมว ดูซีรีย์<br>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

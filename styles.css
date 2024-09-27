@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fcf6bd;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+main {
+    padding: 50px;
+        
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #ffbadf;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.school-image {
+    max-width: 100%;
+    height: auto;
+}
+ 
+
+    a {
+        text-decoration: none; /* ทำให้ไม่มีเส้นใต้ */
+        color: #000; /* กำหนดสีลิงก์ (ปรับได้ตามต้องการ) */
+    }
+
+    a:hover {
+        text-decoration: underline; /* ถ้าต้องการให้มีเส้นใต้เมื่อชี้เมาส์ */
+    }
+

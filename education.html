@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RESUME</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* กำหนดฟอนต์ */
+            margin: 0; /* ลบ margin ของ body */
+            padding: 0px; /* เพิ่ม padding รอบๆ */
+            background-image: url('https://i.pinimg.com/564x/85/74/2f/85742f0e3219f5f47ea507440a8e669c.jpg'); /* รูปภาพพื้นหลัง */
+            background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+            background-position: center; /* จัดตำแหน่งรูปภาพให้ตรงกลาง */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0; /* เพิ่ม padding ด้านบนและด้านล่าง */
+            color: #000000; /* สีข้อความใน header */
+        }
+
+        nav ul {
+            list-style-type: none; /* ไม่ให้มีจุดในรายการ */
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline; /* จัดให้รายการอยู่ในแนวนอน */
+            margin: 0 15px; /* ระยะห่างระหว่างรายการ */
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .school-image {
+            width: 200px; /* กำหนดขนาดรูปภาพ */
+            height: 150px;
+            margin-right: 30px; /* ระยะห่างระหว่างรูปและข้อความ */
+            border-radius: 20px; /* มุมกรอบมน */
+        }
+
+        .education-list {
+            text-align: left; /* จัดข้อความด้านซ้าย */
+            max-width: 800px; /* กำหนดความกว้างสูงสุด */
+            margin: 20px auto; /* จัดกลางในแนวนอน */
+            background-color: rgba(255, 255, 255, 0.8); /* สีพื้นหลังของรายการการศึกษา (โปร่งแสง) */
+            padding: 50px; /* ระยะห่างภายใน */
+            border-radius: 20px; /* มุมมน */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+        }
+
+        .education-item {
+            display: flex; /* ใช้ flexbox */
+            align-items: center; /* จัดให้กลางในแนวตั้ง */
+            margin-bottom: 20px; /* ระยะห่างระหว่างรายการ */
+        }
+
+        h2 {
+            color: #000000; /* สีหัวข้อ */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RESUME</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">เกี่ยวกับฉัน</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="contact.html">ข้อมูลติดต่อ</a></li>
+                <li><a href="API.html">API</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>ประวัติการศึกษา</h2>
+
+        <div class="education-list">
+            <div class="education-item">
+                <a href="https://sriubon.ac.th/site/index" target="_blank"style="display: flex; align-items: center;">
+                <img src="2.jpg" alt="ประถม" class="school-image">
+                <div>
+                    <h3>ระดับประถมศึกษา</h3>
+                    <p>โรงเรียนมูลนิธิวัดศรีอุบลรัตนาราม</p>
+                    <p>จบการศึกษา ปี 2555</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <a href="https://www.benchama.ac.th/site/" target="_blank"style="display: flex; align-items: center;">
+                <img src="3.jpg" alt="มัธยม" class="school-image">
+                <div>
+                    <h3>ระดับมัธยมศึกษา</h3>
+                    <p>โรงเรียนเบ็ญจะมะมหาราช</p>
+                    <p>จบการศึกษา ปี 2559</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <a href="https://www.utc.ac.th/2020/" target="_blank"style="display: flex; align-items: center;">
+                <img src="4.jpg" alt="เทคนิค" class="school-image">
+                <div>
+                    <h3>ระดับประกาศนียบัตรวิชาชีพ และ ประกาศนียบัตรวิชาชีพชั้นสูง</h3>
+                    <p>วิทยาลัยเทคนิคอุบลราชธานี</p>
+                    <p>จบการศึกษา ปี 2564</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <a href="https://www.kmutnb.ac.th/" target="_blank"style="display: flex; align-items: center;">
+                <img src="5.jpg" alt="มหาลัย" class="school-image">
+                <div>
+                    <h3>ระดับอุดมศึกษา</h3>
+                    <p>มหาวิทยาลัยพระจอมเกล้าพระนครเหนือ</p>
+                    <p>กำลังศึกษา</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
