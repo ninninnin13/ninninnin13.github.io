@@ -1,3 +1,8 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -28,8 +33,20 @@ nav ul li a {
 }
 
 main {
-    padding: 50px;
-        
+    display: flex;
+    flex-direction: column;    
+}
+.boxxx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
 
 footer {
@@ -56,4 +73,11 @@ footer {
     a:hover {
         text-decoration: underline; /* ถ้าต้องการให้มีเส้นใต้เมื่อชี้เมาส์ */
     }
+@media screen and (max-width:900px){
+    
+    .boxxx {
+        display: flex;
+        flex-direction: column;
+    }
+}
 

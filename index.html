@@ -11,7 +11,7 @@
             background-position: center; /* จัดตำแหน่งรูปภาพให้ตรงกลาง */
             background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
             margin: 0; /* ลบ margin เริ่มต้นของ body */
-            height: 100vh; /* ทำให้พื้นที่พื้นหลังเต็มความสูงของ viewport */
+            height: auto; /* ทำให้พื้นที่พื้นหลังเต็มความสูงของ viewport */
             display: flex; /* ใช้ flexbox */
             flex-direction: column; /* แนวตั้ง */
         }
@@ -40,7 +40,7 @@
         }
 
         .content {
-            margin-left: 100px; /* ระยะห่างระหว่างรูปกับข้อความ */
+            /* margin-left: 100px; ระยะห่างระหว่างรูปกับข้อความ */
             border: 0px solid rgb(0, 0, 0); /* กรอบรอบข้อความ */
             padding: 20px; /* ระยะห่างภายในกรอบ */
             border-radius: 20px; /* มุมกรอบมน */
@@ -71,20 +71,22 @@
     </header>
     
     <main>
-        <div class="image-container">
-            <img src="1.jpg" alt="รูปภาพของนิธินันท์">
-        </div>
-        <div class="content">
-            <h2>เกี่ยวกับฉัน</h2>
-            <p>
-                ชื่อ : นางสาว นิธินันท์ ไชยนันทน์<br><br>
-                ชื่อเล่น : นิน<br><br>
-                อายุ : 23 ปี<br><br>
-                วันเกิด : 13 มกราคม 2544<br><br>
-                เชื้อชาติ : ไทย<br><br>
-                ศาสนา : พุทธ<br><br>
-                งานอดิเรก : ทำขนม เลี้ยงแมว ดูซีรีย์<br>
-            </p>
+        <div class="boxxx" >
+            <div class="image-container">
+                <img src="1.jpg" alt="รูปภาพของนิธินันท์">
+            </div>
+            <div class="content">
+                <h2>เกี่ยวกับฉัน</h2>
+                <p>
+                    ชื่อ : นางสาว นิธินันท์ ไชยนันทน์<br><br>
+                    ชื่อเล่น : นิน<br><br>
+                    อายุ : 23 ปี<br><br>
+                    วันเกิด : 13 มกราคม 2544<br><br>
+                    เชื้อชาติ : ไทย<br><br>
+                    ศาสนา : พุทธ<br><br>
+                    งานอดิเรก : ทำขนม เลี้ยงแมว ดูซีรีย์<br>
+                </p>
+            </div>
         </div>
     </main>
 </body>
