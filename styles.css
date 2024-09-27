@@ -87,6 +87,7 @@ a:hover {
         display: flex;
         flex-direction: column;
 
+
     }
     .boxxx {
         display: flex;
@@ -111,26 +112,29 @@ a:hover {
     padding-top: 10px;
     
 
-    & .api-text {
+    & .api-text {}
         & .box-api {
             color: rgb(0, 0, 0);
             justify-content: center;
             align-items: center;
             display: flex;
-            font-size: 30px;
+            font-size: 25px;
             text-align: center;
 
         }
-    }
+   
 
     & .under-box-api {
-        & .api-table {
+        }
+        .api-table {
+            color: rgb(0, 0, 0);
             justify-content: center;
             align-items: center;
             display: flex;
-            font-size: 30px;
+            font-size: 15px;
+            text-align: center;
+
         }
-    }
 
     & .api-post {
         & .api-post-box-name {
@@ -138,7 +142,7 @@ a:hover {
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                font-size: 30px;
+                font-size: 20px;
                 column-gap: 1rem;
             }
 
@@ -146,7 +150,7 @@ a:hover {
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                font-size: 30px;
+                font-size: 20px;
                 margin: auto;
 
             }
@@ -157,7 +161,7 @@ a:hover {
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                font-size: 30px;
+                font-size: 20px;
                 column-gap: 1rem;
             }
 
@@ -165,7 +169,7 @@ a:hover {
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                font-size: 30px;
+                font-size: 20px;
                 margin: auto;
             }
         }
@@ -177,7 +181,7 @@ a:hover {
                 text-align: center;
         }
             & .box-sent-submit {
-                font-size: 30px;
+                font-size: 20px;
                 margin: 10px 0;
             }
         
