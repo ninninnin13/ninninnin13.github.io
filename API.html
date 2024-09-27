@@ -7,16 +7,82 @@
     <title>RESUME</title>
 </head>
 <body>
+    <script src="sensor.js"></script>
     <header>
-        <h1>RESUME</h1> 
         <nav>
+            <h1>RESUME</h1>
             <ul>
                 <li><a href="index.html">เกี่ยวกับฉัน</a></li>
                 <li><a href="education.html">การศึกษา</a></li>
                 <li><a href="contact.html">ข้อมูลติดต่อ</a></li>
                 <li><a href="API.html">API</a></li>
             </ul>
-        </nav>
+        </nav>  
     </header>
+
+    <section>
+        <div class="api">
+            <div class="api-text">
+                <div class="box-api">
+                    <h1>API</h1><div id="API" ></div>
+                </div>
+            </div>
+
+            <div class="under-box-api">
+                <div class="api-table">
+                    <table border="2" width="200">
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Value</th>
+                            <th>Unit</th>
+                        </tr>
+    
+                        <tr>
+                            <th>Timestamp</th>
+                            <th><h1 id="time" ></h1></th>
+                            <th>Second</th>
+                        </tr>
+                        <tr>
+                            <th>Temperature</th>
+                            <th><h1 id="temp"></h1></th>
+                            <th>° C</th>
+                        </tr>
+                        <tr>
+                            <th>Luxsensor</th>
+                            <th><h1 id="lux"></h1></th>
+                            <th>Lux</th>
+                    </tr>
+                    <tr>
+                            <th>Humidity</th>
+                            <th><h1 id="hum"></h1></th>
+                            <th>%RH</th>
+                    </tr>
+                        <tr>
+                            <th>Motion</th>
+                            <th><h1 id="mot"></h1></th>
+                            <th>-</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="api-post">
+                    <form onsubmit="event.preventDefault(); submitData();">
+                        <div class="api-post-box-name">
+                            <p class="text-titlebox">Name : </p>
+                            <input class="box-input-text" type="text" id="studentName" required placeholder="Enter Student Name">
+                        </div>
+                        <div class="api-post-box-id">
+                            <p class="text-titlebox">ID : </p>
+                            <input class="box-input-text" type="text" id="studentId" required placeholder="Enter Student ID">
+                        </div>
+                        <div class="api-post-box-sent">
+                            <input class="box-sent-submit" type="submit">
+                        </div>
+                    </form>
+    
+                </div>
+    </section>
+
 </body>
+
 </html>

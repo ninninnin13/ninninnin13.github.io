@@ -34,19 +34,21 @@ nav ul li a {
 
 main {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
+
 .boxxx {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
     text-align: center;
 }
+
 .content {
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 0 15px;
 }
 
 footer {
@@ -63,21 +65,130 @@ footer {
     max-width: 100%;
     height: auto;
 }
- 
 
-    a {
-        text-decoration: none; /* ทำให้ไม่มีเส้นใต้ */
-        color: #000; /* กำหนดสีลิงก์ (ปรับได้ตามต้องการ) */
-    }
 
-    a:hover {
-        text-decoration: underline; /* ถ้าต้องการให้มีเส้นใต้เมื่อชี้เมาส์ */
+a {
+    text-decoration: none;
+    /* ทำให้ไม่มีเส้นใต้ */
+    color: #000;
+    /* กำหนดสีลิงก์ (ปรับได้ตามต้องการ) */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* ถ้าต้องการให้มีเส้นใต้เมื่อชี้เมาส์ */
+}
+
+
+@media screen and (max-width:900px) {
+    .main {
+        display: flex;
+        flex-direction: column;
     }
-@media screen and (max-width:900px){
-    
     .boxxx {
         display: flex;
         flex-direction: column;
     }
+    .content {
+        margin: 10px 0px;
+    }
 }
 
+
+.api {
+    background-image: url('https://i.pinimg.com/564x/2f/9a/28/2f9a2876064f4eec1d3f3c8ab4529cdf.jpg');
+    background-size: cover;
+    /* ปรับขนาดให้เต็มหน้าจอ */
+    background-position: center;
+    /* จัดให้อยู่กลาง */
+    background-repeat: no-repeat;
+    /* ไม่ให้พื้นหลังซ้ำ */
+    color: rgb(0, 0, 0);
+    /* เปลี่ยนสีข้อความให้มองเห็นได้ชัด */
+    padding-top: 10px;
+    
+
+    & .api-text {
+        & .box-api {
+            color: rgb(0, 0, 0);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 30px;
+            text-align: center;
+
+        }
+    }
+
+    & .under-box-api {
+        & .api-table {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 30px;
+        }
+    }
+
+    & .api-post {
+        & .api-post-box-name {
+            & .text-titlebox {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 30px;
+                column-gap: 1rem;
+            }
+
+            & .box-input-text {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 30px;
+                margin: auto;
+
+            }
+        }
+
+        & .api-post-box-id {
+            & .text-titlebox {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 30px;
+                column-gap: 1rem;
+            }
+
+            & .box-input-text {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 30px;
+                margin: auto;
+            }
+        }
+
+        & .api-post-box-sent {
+            display: flex;
+                flex-direction: column;
+                align-items: center;   
+                text-align: center;
+        }
+            & .box-sent-submit {
+                font-size: 30px;
+                margin: 10px 0;
+            }
+        
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+}
