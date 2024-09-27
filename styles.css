@@ -112,7 +112,7 @@ a:hover {
     padding-top: 10px;
     
 
-    & .api-text {}
+
         & .box-api {
             color: rgb(0, 0, 0);
             justify-content: center;
@@ -124,8 +124,7 @@ a:hover {
         }
    
 
-    & .under-box-api {
-        }
+
         .api-table {
             color: rgb(0, 0, 0);
             justify-content: center;
@@ -137,7 +136,7 @@ a:hover {
         }
 
     & .api-post {
-        & .api-post-box-name {
+
             & .text-titlebox {
                 justify-content: center;
                 align-items: center;
@@ -154,7 +153,7 @@ a:hover {
                 margin: auto;
 
             }
-        }
+        
 
         & .api-post-box-id {
             & .text-titlebox {
