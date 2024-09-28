@@ -1,8 +1,4 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,7 +29,7 @@ nav ul li a {
 }
 
 main {
-    /* display: flex; */
+
     flex-direction: column;
     margin-top: 50px;
 
@@ -71,14 +67,14 @@ footer {
 
 a {
     text-decoration: none;
-    /* ทำให้ไม่มีเส้นใต้ */
+   
     color: #000;
-    /* กำหนดสีลิงก์ (ปรับได้ตามต้องการ) */
+    
 }
 
 a:hover {
     text-decoration: underline;
-    /* ถ้าต้องการให้มีเส้นใต้เมื่อชี้เมาส์ */
+    
 }
 
 
@@ -102,13 +98,13 @@ a:hover {
 .api {
     background-image: url('https://i.pinimg.com/564x/2f/9a/28/2f9a2876064f4eec1d3f3c8ab4529cdf.jpg');
     background-size: cover;
-    /* ปรับขนาดให้เต็มหน้าจอ */
+  
     background-position: center;
-    /* จัดให้อยู่กลาง */
+   
     background-repeat: no-repeat;
-    /* ไม่ให้พื้นหลังซ้ำ */
+   
     color: rgb(0, 0, 0);
-    /* เปลี่ยนสีข้อความให้มองเห็นได้ชัด */
+ 
     padding-top: 10px;
     
 
